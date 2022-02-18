@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+    <RelativeLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:id="@+id/back_btn"
+            android:src="@mipmap/back_black" />
+        <EditText
+            android:id="@+id/edit_keyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/back_btn"
+            android:layout_toStartOf="@+id/search_btn"
+            android:background="@drawable/seek_sp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingStart="15dp"
+            android:hint="@string/search_singer"
+            android:textColor="@color/grey"
+            android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/search_btn"
+                android:text="@string/search"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center|right"
+                android:background="@drawable/searchbtn"
+                android:textSize="16dp"
+                android:layout_marginEnd="20dp"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/search_lv"
+        android:layout_below="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:divider="@null"
+        android:dividerHeight="6dp"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:background="@color/grey_f3f3f3"/>
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="试着搜索你喜欢的歌手或歌曲吧~"
+        android:textSize="20dp"
+        android:textColor="@color/grey"
+        android:background="@color/grey_f3f3f3"
+        android:layout_below="@+id/search_bar"/>
+
+
+</RelativeLayout>

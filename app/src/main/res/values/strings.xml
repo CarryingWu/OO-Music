@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">OO音乐</string>
+    <string name="title_home">播放</string>
+    <string name="title_dashboard">音乐馆</string>
+    <string name="title_notifications">我的</string>
+    <string name="playName">当前播放</string>
+    <string name="user">后续还想做用户登录，歌单，收藏等功能，但由于复习压力较大，没有时间了，所以暂未实现，最终期末项目就做到这里了~后面考试完了会继续维护此项目并开源到Github上</string>
+    <string name="search_singer">试着搜点啥吧</string>
+    <string name="search">搜索</string>
+    <string name="not_data">暂无数据</string>
+
+</resources>
